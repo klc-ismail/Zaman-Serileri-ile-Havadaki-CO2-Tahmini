@@ -59,6 +59,7 @@ Grafik incelendiğinde mevsimsellik ve yukarı yönlü trend gözlemlenmektedir.
 ### ACF ve PACF Grafikleri
 ![alt text](grafikler/grafik3.jpg)
 ![alt text](grafikler/grafik4.jpg)
+
 ACF grafiği incelendiğinde ilk dört veri güven sınırları dışarısında olup seride trend olduğunu desteklemektedir. Yine ACF grafiğine bakıldığında baskın mevsimsellik gözlemlenmiştir.
 
 ### 1.Farka Ait ACF ve PACF Grafikleri
@@ -68,6 +69,7 @@ ACF grafiği incelendiğinde ilk dört veri güven sınırları dışarısında 
 ### 2.Farka Ait ACF ve PACF Grafikleri
 ![alt text](grafikler/grafik7.jpg)
 ![alt text](grafikler/grafik8.jpg)
+
 Seride trend ve baskın mevsimsellik kalmamış, durağanlaştırılmıştır.
 
 ## Ayrıştırma Yöntemleri
@@ -77,6 +79,7 @@ Seride trend ve baskın mevsimsellik kalmamış, durağanlaştırılmıştır.
 ![alt text](grafikler/grafik10.jpg)
 ![alt text](grafikler/grafik11.jpg)
 ![alt text](grafikler/grafik12.jpg)
+
 Veriler ile tahmin serisi uyumlu gözükmektedir. Ancak Box-Ljung testi ve ACF grafiği incelendiğinde hata serisi akgürültü serisi olmadığı için Toplamsal Ayrıştırma Yöntemi’nin uygun olmadığı görülmektedir.
 
 ### Çarpımsal Ayrıştırma
@@ -84,6 +87,7 @@ Veriler ile tahmin serisi uyumlu gözükmektedir. Ancak Box-Ljung testi ve ACF g
 ![alt text](grafikler/grafik14.jpg)
 ![alt text](grafikler/grafik15.jpg)
 ![alt text](grafikler/grafik16.jpg)
+
 Veriler ile tahmin serisi uyumlu gözükmektedir. Ancak Box-Ljung testi ve ACF grafiği incelendiğinde hata serisi akgürültü serisi olmadığı için Çarpımsal Ayrıştırma Yöntemi’nin de uygun olmadığı görülmektedir.
 
 ## Mevsimsel Zaman Serilerinde Regresyon Analizi
@@ -91,47 +95,59 @@ Veriler ile tahmin serisi uyumlu gözükmektedir. Ancak Box-Ljung testi ve ACF g
 ### Toplamsal Regresyon
 ![alt text](grafikler/grafik17.jpg)
 ![alt text](grafikler/grafik18.jpg)
+
 Regresyon katsayılarının tamamı anlamlı olduğu için 2. harmonik işlem uygulanır.
 
 #### 2. Harmonik İşlem Modeli
 ![alt text](grafikler/grafik19.jpg)
 ![alt text](grafikler/grafik20.jpg)
+
 2. harmonik işlem modelinde regresyon katsayıları anlamlı çıkmaya devam etmiştir. 3. Harmonik işlem modeli uygulanır.
 
 #### 3. Harmonik İşlem Modeli
 ![alt text](grafikler/grafik21.jpg)
 ![alt text](grafikler/grafik22.jpg)
+
 3. harmonik işlem modelinde “sin3” ve “cos3” regresyon katsayısı anlamsız çıkmıştır. Bütün regresyon katsayıları anlamlı olmadığı için 2. modele geri dönülür. 2. Harmonik işlem modeli uygulanır.
 
 ![alt text](grafikler/grafik23.jpg)
+
 Durbin-Watson testi incelendiğinde istatistiği 0.83048 olarak hesaplanmış olup pozitif otokorelasyon olduğunu söyleyebiliriz. P değeri 0.05’ten küçük olduğu için yokluk hipotezi (H0<0.05) reddedilir modelin anlamlı olduğu söylenebilir.
 
 ![alt text](grafikler/grafik24.jpg)
+
 Orijinal seri ile tahmin serisinin güven aralığında yer alması grafikte verilmiş olup alt ve üst sınırları ile aynı değerleri aldığı gözlemlenmektedir.
 
 ![alt text](grafikler/grafik25.jpg)
 ![alt text](grafikler/grafik26.jpg)
+
 Box-Ljung testi incelendiğinde P değeri 0.05’ten küçük olduğu için yokluk hipotezi (HS<0.05) reddedilir, hata terimleri arasında anlamlı bir otokorelasyon bulunmaktadır. ACF grafiği incelendiğinde de hataların akgürültü olmadığı gözlemlenmiştir. Toplamsal Regresyon Modeli’nin anlamlı olmadığı söylenebilir.
 
 ### Çarpımsal Regresyon
 ![alt text](grafikler/grafik27.jpg)
 ![alt text](grafikler/grafik28.jpg)
+
 Regresyon katsayılarının tamamı anlamlı olduğu için 2. harmonik işlem uygulanır.
 
 #### 2. Harmonik İşlem Modeli
 ![alt text](grafikler/grafik29.jpg)
 ![alt text](grafikler/grafik30.jpg)
+
 2. harmonik işlem modelinde “sinx2” regresyon katsayısı anlamsız çıkmıştır. Bütün regresyon katsayıları anlamlı olmadığı için 1. modele geri dönülür. 1. Harmonik işlem modeli uygulanır.
 
 ![alt text](grafikler/grafik31.jpg)
+
 Durbin-Watson testi incelendiğinde istatistiği 0.51901 olarak hesaplanmış olup pozitif otokorelasyon belirtisi olduğunu söyleyebiliriz. P değeri 0.05’ten küçük olduğu için yokluk hipotezi (HS<0.05) reddedilir modelin anlamlı olduğu söylenebilir.
 
 ![alt text](grafikler/grafik32.jpg)
+
 Orijinal seri ile tahmin serisinin güven aralığında yer alması grafikte verilmiş olup alt ve üst sınırlar ile uyumlu olmadığı gözlemlenmektedir.
 
 ![alt text](grafikler/grafik33.jpg)
 ![alt text](grafikler/grafik34.jpg)
-Box-Ljung testi incelendiğinde P değeri 0.05’ten küçük olduğu için yokluk hipotezi (HS<0.05) reddedilir, hata terimleri arasında anlamlı bir otokorelasyon bulunmaktadır. ACF grafiği incelendiğinde de hataların akgürültü olmadığı gözlemlenmiştir. Çarpımsal Regresyon Modeli’nin anlamlı olmadığı söylenebilir.
+
+Box-Ljung testi incelendiğinde P değeri 0.05’ten küçük olduğu için yokluk hipotezi (HS<0.05) reddedilir, hata terimleri arasında anlamlı bir otokorelasyon bulunmaktadır. ACF grafiği 
+incelendiğinde de hataların akgürültü olmadığı gözlemlenmiştir. Çarpımsal Regresyon Modeli’nin anlamlı olmadığı söylenebilir.
 
 ## Üstel Düzleştirme Yöntemi
 
@@ -139,6 +155,7 @@ Box-Ljung testi incelendiğinde P değeri 0.05’ten küçük olduğu için yokl
 
 #### Toplamsal Winters Üstel Düzleştirme Yöntemi
 ![alt text](grafikler/grafik35.jpg)
+
 Winters üstel düzleştirme yöntemine göre ortalama düzeyin başlangıç değeri 392.9168; eğimin başlangıç değeri 0.2023; mevsimsel terimin başlangıç değerleri sırasıyla:
 
 - M1(0) = -0.673
@@ -159,6 +176,7 @@ Bu başlangıç değerleri kullanılarak optimal düzleştirme katsayıları α 
 #### Çarpımsal Winters Üstel Düzleştirme Yöntemi 
 
 ![alt text](grafikler/grafik36.jpg)
+
 Winters üstel düzleştirme yöntemine göre ortalama düzeyin başlangıç değeri 392.4746; eğimin başlangıç değeri 0.2579; mevsimsel terimin başlangıç değerleri sırasıyla:
 
 - M1(0) = 0.9983
@@ -178,9 +196,11 @@ Bu başlangıç değerleri kullanılarak, optimal düzleştirme katsayıları α
 
 
 #### Toplamsal Winters Üstel Düzleştirme Yöntemi ile Tahmin ve Öngörü 
-Toplamsal ve Çarpımsal yöntemlerin her ikisi de karşılaştırıldığında; BIC değerleri Toplamsal için 245.5314, Çarpımsal için 256.2672 olarak bulumuştur. HKO değerleri Toplamsal için 0.3189255, Çarpımsal için 0.3295758 olarak bulunmuştur. Her iki değer bakımından karşılaştırıldığında Toplamsal Düzleştirme yöntemi daha küçük olduğu için öngörü yapmak üzere seçilir.
+Toplamsal ve Çarpımsal yöntemlerin her ikisi de karşılaştırıldığında; BIC değerleri Toplamsal için 245.5314, Çarpımsal için 256.2672 olarak bulumuştur. HKO değerleri Toplamsal için 
+0.3189255, Çarpımsal için 0.3295758 olarak bulunmuştur. Her iki değer bakımından karşılaştırıldığında Toplamsal Düzleştirme yöntemi daha küçük olduğu için öngörü yapmak üzere seçilir.
 
 ![alt text](grafikler/grafik37.jpg)
+
 Orijinal seri ile tahmin serisinin uyum gösterdiği grafik üzerinden görülmektedir.
 
 ![alt text](grafikler/grafik38.jpg)
@@ -193,6 +213,7 @@ Box-Ljung testi incelendiğinde P değeri 0.05’ten büyük olduğu için yoklu
 
 #### Öngörü
 ![alt text](grafikler/grafik41.jpg)
+
 Toplamsal Model ile elde edilen öngörüde Ekim ayından itibaren ilk 5 aylık öngörüyü sırasıyla 405.7594, 407.4517, 408.9605, 409.9908, 410.7497 olarak tahmin etmiştir.
 
 ## Box – Jenkins Modeli ile Tahmin ve Öngörü
@@ -206,23 +227,28 @@ Seriye uygun model ARIMA(1,1,0)(0,1,1)_12 olmaktadır.
 	Modele ilişkin sonuçlar incelendiğinde: 
 
 ![alt text](grafikler/grafik42.jpg)
+
 Ar1 katsayısı-0.4340 ve standart hatası 0.1079; Sma1 katsayısı -0.9997 ve standart hatası 0.2166 olarak bulunmuştur. Önceki zaman noktasındaki değerlerle negatif bir ilişki olduğunu göstermektedir.
 
 ![alt text](grafikler/grafik43.jpg)
+
 Ar1 katsayısı -0.43401, Sma1 katsayısı -0.99971 olarak bulunmuştur. Sıfırdan farklı ve istatistiksel olarak anlamlı olduklarını, veri setine uygun olup modelin başarısında etkili olduğunu söyleyebiliriz.
 
 
 ### Modelin Tahmini
 ![alt text](grafikler/grafik44.jpg)
+
 Orijinal seri ile tahmin serisi uyum göstermektedir.
 
 ![alt text](grafikler/grafik45.jpg)
+
 H_0: Seride Otokorelasyon yoktur.
 H_S: Seride Otokorelasyon vardır.
 P değeri 0.859 olup H_0 kabul edilir. Serideki otokorelasyonun istatistiksel olarak anlamlı olmadığını gösterir. Modelin hata terimleri arasında istatistiksel olarak anlamlı bir otokorelasyon bulunmamaktadır. Model hata terimlerinden bağımsızdır ve öngörü yaparken geçmiş hatalara bağımlı bir desen içermediğini göstermektedir.
 
 
 ![alt text](grafikler/grafik45.jpg)
+
 ACF grafiği incelendiğinde de hataların akgürültü olduğu gözlemlenmiştir. Modelin anlamlı olduğu ve öngörü için kullanılabileceği söylenmektedir.
 
 ![alt text](grafikler/grafik46.jpg)
@@ -230,6 +256,7 @@ ACF grafiği incelendiğinde de hataların akgürültü olduğu gözlemlenmişti
 
 ### Modelin Öngörüsü 
 ![alt text](grafikler/grafik47.jpg)
+
 Model ile elde edilen öngörüde Ekim ayından itibaren ilk 5 aylık öngörüyü sırasıyla 405.8883, 407.5502, 409.0434, 410.1841, 410.8497 olarak tahmin etmiştir.
 
 ### Modele Ait Öngörü Grafiği
@@ -237,6 +264,7 @@ Model ile elde edilen öngörüde Ekim ayından itibaren ilk 5 aylık öngörüy
 
 
 # Kaynakça
-Data Camp. DataCamp: https://app.datacamp.com/learn/courses/arima-models-in-python adresinden alındı
+Data Camp. DataCamp: https://app.datacamp.com/learn/courses/arima-models-in-python 
+
 Prof.Dr.Cem Kadılar, D. Ö. (2020). SPSS ve R Uygulamalı Zaman Serileri Analizine Giriş. Ankara: Seçkin Yayıncılık.
 
