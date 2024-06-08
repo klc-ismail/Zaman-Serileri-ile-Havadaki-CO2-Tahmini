@@ -50,7 +50,7 @@
 | 1.09.2018  | 40551   |
 
 ## Veriye Ait Grafikler
-
+![GitHub Logo]([https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png](https://github.com/klc-ismail/Zaman-Serileri-ile-Havadaki-CO2-Tahmini/blob/main/grafikler/grafik1.jpg))
 Grafik incelendiğinde mevsimsellik ve yukarı yönlü trend gözlemlenmektedir.
 
 ### Gecikme Grafiği
